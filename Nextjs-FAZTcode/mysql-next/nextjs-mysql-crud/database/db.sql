@@ -1,0 +1,10 @@
+CREATE TABLE product(
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(250) NOT NULL,
+    description VARCHAR(300),
+    price DECIMAL(10,2),
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+ALTER TABLE product ADD COLUMN image VARCHAR(300) AFTER description;
