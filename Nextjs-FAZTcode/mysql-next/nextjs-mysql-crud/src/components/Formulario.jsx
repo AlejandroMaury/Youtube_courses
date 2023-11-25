@@ -68,8 +68,8 @@ function Formulario() {
     }
 
     form.current.reset();
-    router.refresh();
     router.push("/products");
+    router.refresh();
   };
 
   return (
